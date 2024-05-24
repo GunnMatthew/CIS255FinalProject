@@ -2,6 +2,7 @@ Creating a website to display my information and things I've worked on/experienc
 
 // For me
 -Create repository [X]
+-React [X]
 -Design Homepage []
 -Design About Me (resume style?) []
 -Design Projects []
