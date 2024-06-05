@@ -3,10 +3,17 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 const ProjectCard = ({ language, projects }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/projects/${language.toLowerCase()}`);
+  }
+
   return (
-    <Box sx={{ maxWidth: 200, minWidth: 175, margin: 1}}>
+    <Box sx={{ maxWidth: 200, minWidth: 175, margin: 1}} onClick={handleClick} style={{ cursor: 'pointer'}}>
       <Card variant="outlined" sx={{ backgroundColor: 'darkgray', border: 'solid', borderColor: 'white'}}>
         <CardContent>
           <Typography sx={{ fontSize: 14 }}>

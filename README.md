@@ -5,7 +5,7 @@ Creating a website to display my information and things I've worked on/experienc
 -React [X]
 -Design Homepage []
 -Design About Me (resume style?) []
--Design Projects []
+-Design Projects [] (soft copy done; finalized styling later.)
     -Java []
     -Python []
     -JavaScript []
