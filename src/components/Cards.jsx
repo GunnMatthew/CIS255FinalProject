@@ -9,7 +9,7 @@ const ProjectCard = ({ language, projects }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/projects/${language.toLowerCase()}`);
+    navigate(`/Projects/${language.toLowerCase()}`);
   }
 
   return (
