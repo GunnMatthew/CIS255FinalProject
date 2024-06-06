@@ -4,7 +4,7 @@ const ErrorPage = () => {
     <div style={{textAlign: 'center' }}>
       <hr/>
       <h1>Nothing to see here!</h1>
-      <p>Sorry, this content is not available right now.  Pleaes check again later.</p>
+      <p>Sorry, this content is not available right now.  Please check again later.</p>
     </div>
   );
 };

@@ -4,6 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
+import $ from 'jquery';
+import { useEffect } from 'react';
 
 const ProjectCard = ({ language, projects }) => {
   const navigate = useNavigate();
@@ -12,9 +14,23 @@ const ProjectCard = ({ language, projects }) => {
     navigate(`/Projects/${language.toLowerCase()}`);
   }
 
+  useEffect(() => {
+    $('.projectCard').hover( 
+      function() {
+        $(this).css({
+          backgroundColor: 'lightgray',
+        });
+    },
+      function() {
+        $(this).css({
+          backgroundColor: 'darkgray',
+        });
+      });
+  }, []);
+
   return (
-    <Box sx={{ maxWidth: 200, minWidth: 175, margin: 1}} onClick={handleClick} style={{ cursor: 'pointer'}}>
-      <Card variant="outlined" sx={{ backgroundColor: 'darkgray', border: 'solid', borderColor: 'white'}}>
+    <Box sx={{ maxWidth: 200, minWidth: 175, margin: 1}} onClick={handleClick}>
+      <Card className='projectCard' variant="outlined" sx={{ backgroundColor: 'darkgray', border: 'solid', borderColor: 'white'}}>
         <CardContent>
           <Typography sx={{ fontSize: 14 }}>
             {language}
