@@ -9,9 +9,14 @@ import pythonAvatar from './assets/images/python.png';
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
-  const isJavaPage = location.pathname === '/projects/java';
-  const isJavaScriptPage = location.pathname === '/projects/javascript';
-  const isPythonPage = location.pathname === '/projects/python';
+  const isJavaPage = location.pathname === '/Projects/java';
+  const isJavaScriptPage = location.pathname === '/Projects/javascript';
+  const isPythonPage = location.pathname === '/Projects/python';
+
+  console.log('Current path:', location.pathname);
+  console.log('isJavaPage:', isJavaPage);
+  console.log('isJavaScriptPage:', isJavaScriptPage);
+  console.log('isPythonPage:', isPythonPage);
 
   return (
     <>
