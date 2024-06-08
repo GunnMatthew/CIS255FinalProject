@@ -1,16 +1,31 @@
-import { Outlet, useLocation } from 'react-router-dom'
-import './App.css'
-import ImageAvatars from './components/Avatar'
-import BasicButtonGroup from './components/ButtonGroup'
+import { Outlet, useLocation } from 'react-router-dom';
+import './App.css';
+import ImageAvatars from './components/Avatar';
+import BasicButtonGroup from './components/ButtonGroup';
+import javaAvatar from './assets/images/java.png';
+import javascriptAvatar from './assets/images/javascript.png';
+import pythonAvatar from './assets/images/python.png';
 
 function App() {
-  const isHomePage = useLocation().pathname === '/';
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+  const isJavaPage = location.pathname === '/projects/java';
+  const isJavaScriptPage = location.pathname === '/projects/javascript';
+  const isPythonPage = location.pathname === '/projects/python';
 
   return (
     <>
     <header className={isHomePage ? 'largeHeader' : 'smallHeader'}>
       <div>
-        <ImageAvatars/>
+        {isJavaPage ? (
+          <ImageAvatars src={javaAvatar} alt="Java Logo"/>
+        ) : isJavaScriptPage ? (
+          <ImageAvatars src={javascriptAvatar} alt="JavaScript Logo"/>
+        ) : isPythonPage ? (
+          <ImageAvatars src={pythonAvatar} alt="Python Logo"/>
+        ) : (
+          <ImageAvatars/>
+        )}
       </div>
       <div>
         <h1>Matthew Gunn</h1>

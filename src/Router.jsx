@@ -26,11 +26,11 @@ const routes = [
           element: <JavaPage/>,
         },
         {
-          path: "projects/javaScript",
+          path: "projects/javascript",
           element: <JSPage/>,
         },
         {
-          path: "projects/Python",
+          path: "projects/python",
           element: <PythonPage/>,
         },
       ]

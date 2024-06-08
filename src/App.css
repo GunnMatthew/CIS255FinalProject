@@ -31,6 +31,14 @@
   margin-top: 1rem;
 }
 
+hr {
+  border: none; /* Remove border */
+  height: 1px; /* Adjust height */
+  background-color: #ccc; /* Change color */
+  width: 80%; /* Adjust width */
+  margin: 0 auto; /* Center and add margin */
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
