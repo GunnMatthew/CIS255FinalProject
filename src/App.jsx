@@ -13,11 +13,6 @@ function App() {
   const isJavaScriptPage = location.pathname === '/Projects/javascript';
   const isPythonPage = location.pathname === '/Projects/python';
 
-  console.log('Current path:', location.pathname);
-  console.log('isJavaPage:', isJavaPage);
-  console.log('isJavaScriptPage:', isJavaScriptPage);
-  console.log('isPythonPage:', isPythonPage);
-
   return (
     <>
     <header className={isHomePage ? 'largeHeader' : 'smallHeader'}>
