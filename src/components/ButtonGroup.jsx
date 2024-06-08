@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import PropTypes from 'prop-types';
 
 // Creating the button grouping and implementing their stylings
 export default function BasicButtonGroup(props) {
@@ -15,6 +16,12 @@ export default function BasicButtonGroup(props) {
     const handleProjectsClick = () => {
         navigate('/Projects')
     }
+
+    BasicButtonGroup.propTypes = {
+      buttonOne: PropTypes.string.isRequired,
+      buttonTwo: PropTypes.string.isRequired,
+      buttonThree: PropTypes.string.isRequired,
+    };
 
   return (
     <ButtonGroup variant="contained">

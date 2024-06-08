@@ -7,9 +7,10 @@ const ImageAvatars = ({alt, src}) => {
     return (
         <Stack alignItems="center">
             <Avatar 
+                className="avatar"
                 alt={alt}
                 src={src}
-                sx={{ width: 150, height: 150}} />
+                />
         </Stack>
     )
 }

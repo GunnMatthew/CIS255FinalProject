@@ -1,22 +1,26 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import './App.css'
 import ImageAvatars from './components/Avatar'
-import RenderName from './components/RenderName'
 import BasicButtonGroup from './components/ButtonGroup'
 
 function App() {
+  const isHomePage = useLocation().pathname === '/';
 
   return (
     <>
-    <div>
-      <ImageAvatars/>
-    </div>
-    <div>
-      <RenderName/>
-      <BasicButtonGroup buttonOne="About Me" buttonTwo="My Github" buttonThree="Other Projects"/>
-      <p>Please select a destination from above.</p>
-    </div>
-    <Outlet/>
+    <header className={isHomePage ? 'largeHeader' : 'smallHeader'}>
+      <div>
+        <ImageAvatars/>
+      </div>
+      <div>
+        <h1>Matthew Gunn</h1>
+        <BasicButtonGroup buttonOne="About Me" buttonTwo="My Github" buttonThree="Other Projects"/>
+        {isHomePage && <p>Please select a destination from above.</p>}
+      </div>
+    </header>
+    <main className={isHomePage ? '' : 'mainContent'}>
+      <Outlet/>
+    </main>
     </>
   );
 }
