@@ -19,7 +19,6 @@ const ProjectCard = ({ language, projects }) => {
       function() {
         $(this).css({
           backgroundColor: 'lightgray',
-          transition: 'width 2s ease, height 2s ease',
         });
     },
       function() {

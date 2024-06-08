@@ -29,7 +29,7 @@ function App() {
       </div>
       <div>
         <h1>Matthew Gunn</h1>
-        <BasicButtonGroup buttonOne="About Me" buttonTwo="My Github" buttonThree="Other Projects"/>
+        <BasicButtonGroup buttonOne="About Me" buttonTwo="My Github" buttonThree="Projects"/>
         {isHomePage && <p>Please select a destination from above.</p>}
       </div>
     </header>
