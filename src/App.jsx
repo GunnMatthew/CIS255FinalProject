@@ -29,8 +29,9 @@ function App() {
       </div>
       <div>
         <h1>Matthew Gunn</h1>
-        <BasicButtonGroup buttonOne="About Me" buttonTwo="My Github" buttonThree="Projects"/>
+        <BasicButtonGroup buttonOne="About Me" buttonTwo="My Github" buttonThree="Projects" buttonFour="Contact Me"/>
         {isHomePage && <p>Please select a destination from above.</p>}
+        {!isHomePage && <hr/>}
       </div>
     </header>
     <main className={isHomePage ? '' : 'mainContent'}>

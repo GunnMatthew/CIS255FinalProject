@@ -5,6 +5,7 @@ import ProjectPage from "./components/Projects.jsx";
 import JavaPage from "./components/Java.jsx";
 import JSPage from "./components/JavaScript.jsx";
 import PythonPage from "./components/Python.jsx";
+import ContactMe from "./components/ContactMe.jsx";
 
 // Establish routes to be navigated
 const routes = [
@@ -20,6 +21,10 @@ const routes = [
         {
           path: "projects",
           element: <ProjectPage/>,
+        },
+        {
+          path: "contactMe",
+          element: <ContactMe/>,
         },
         {
           path: "projects/java",

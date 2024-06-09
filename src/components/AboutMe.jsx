@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 const AboutMe = ({aboutMe}) => {
     return (
         <div>
-            <hr/>
             <h1>About Me</h1>
             <p>{aboutMe}</p>
         </div>

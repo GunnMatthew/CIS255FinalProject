@@ -16,11 +16,15 @@ export default function BasicButtonGroup(props) {
     const handleProjectsClick = () => {
         navigate('/Projects')
     }
+    const handleContactClick = () => {
+        navigate('/ContactMe')
+    }
 
     BasicButtonGroup.propTypes = {
       buttonOne: PropTypes.string.isRequired,
       buttonTwo: PropTypes.string.isRequired,
       buttonThree: PropTypes.string.isRequired,
+      buttonFour: PropTypes.string.isRequired,
     };
 
   return (
@@ -28,6 +32,7 @@ export default function BasicButtonGroup(props) {
       <Button sx={{backgroundColor: "darkgray", color: "black"}} onClick={handleAboutMeClick}>{props.buttonOne}</Button>
       <Button sx={{backgroundColor: "darkgray", color: "black"}} onClick={handleGithubClick}>{props.buttonTwo}</Button>
       <Button sx={{backgroundColor: "darkgray", color: "black"}} onClick={handleProjectsClick}>{props.buttonThree}</Button>
+      <Button sx={{backgroundColor: "darkgray", color: "black"}} onClick={handleContactClick}>{props.buttonFour}</Button>
     </ButtonGroup>
   );
 }
