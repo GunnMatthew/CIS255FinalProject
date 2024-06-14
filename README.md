@@ -7,31 +7,23 @@ Creating a website to display my information and things I've worked on/experienc
 
 -Design Homepage [X]
 
--Design About Me (resume style?) []
-
--Design Projects [] (soft copy done; finalized styling later.)
+-Design Projects [X] - Completed and made so that it can be expanded with time.
 
     -Java [X]
 
-        -No real data, but made seperate page.  Finalize styling later.
+        -Made so that projects can be added as accomplished.
 
     -Python [X]
 
-        -No real data, but made seperate page.  Finalize styling later.
+        -Made so that projects can be added as accomplished.
 
     -JavaScript [X]
 
-        -No real data, but made seperate page.  Finalize styling later.
-
-    -Figure out how I want to handle project layout (project page with navigation to each language?  Project page holds all projects?) [X]
+        -Made so that projects can be added as accomplished.
 
 -Design global navigation [X]
 
-    -Finalize styling later.[]
-
 -Create Homepage [X]
-
-    -Homepage is created, but severely lacking.  Needs design and maybe more info?  Do I want to keep it simplistic?
 
 -Create About Me [X]
 
@@ -41,9 +33,7 @@ Creating a website to display my information and things I've worked on/experienc
 
 -Create contact me page [X]
 
-    -Make the form submission actually email me []
-
--What other pages would be beneficial to add?
+    -Make the form submission actually email me (Not completing for Final Project turn in, will be done when I start putting this "out there") []
 
 -What information do I want to display on About Me that doesn't contradict Projects?
 

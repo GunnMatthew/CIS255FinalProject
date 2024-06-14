@@ -1,11 +1,38 @@
 import PropTypes from 'prop-types'
+import { Box, Paper, Typography } from '@mui/material';
+import { styled } from '@mui/system';
+
+const StyledPaper = styled(Paper)(({ theme }) => ({
+    width: '8.5in',
+    height: '11in',
+    padding: '24px', // Fallback value
+    margin: 'auto',
+    marginTop: '32px', // Fallback value
+    backgroundColor: 'white',
+    boxShadow: '2px 4px 4px black',
+    overflow: 'hidden',
+}))
 
 const AboutMe = ({aboutMe}) => {
     return (
-        <div>
-            <h1>About Me</h1>
-            <p>{aboutMe}</p>
-        </div>
+        <Box sx={{ display: 'flex', justifyContent: 'center'}}>
+            <StyledPaper>
+                <Typography sx={{ fontWeight: 'bold', fontSize: 16 }}>
+                    Matthew E. Gunn
+                </Typography>
+                <Typography component="div" sx={{ fontWeight: 'bold', fontSize: 14, mb: 1 }}>
+                    Bremerton, Washington 98312
+                    <br/>
+                    gunnmatthewe@gmail.com
+                </Typography>
+                <Typography sx={{ fontWeight: 'bold', textAlign: 'left'}}>
+                    Educational Experience
+                </Typography>
+                <Typography variant="body1">
+                    {aboutMe}
+                </Typography>
+            </StyledPaper>
+        </Box>
     );
 };
 
