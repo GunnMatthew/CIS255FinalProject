@@ -20,6 +20,7 @@ const ContactMe = () => {
     const handleFormSubmit = (e) => {
         e.preventDefault();
         // Make this functional at some point.
+        console.log(formData);
     };
 
     return (

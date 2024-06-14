@@ -32,11 +32,11 @@ const ProjectCard = ({ language, projects }) => {
     <Box sx={{ maxWidth: 200, minWidth: 175, margin: 1}} onClick={handleClick}>
       <Card className='projectCard' variant="outlined" sx={{ backgroundColor: 'darkgray', border: 'solid', borderColor: 'white'}}>
         <CardContent>
-          <Typography sx={{ fontSize: 14 }}>
+          <Typography sx={{ fontSize: 18 }}>
             {language}
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <ul style= {{ listStyleType: 'disc', padding: 0, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <ul style= {{ listStyleType: 'disc', padding: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: 13}}>
               {projects.map((project, index) => (
                 <li key={index} style={{ textAlign: 'center' }}>{project}</li>
               ))}
@@ -55,7 +55,7 @@ ProjectCard.propTypes = {
 
 const Projects = () => {
   const projectData = {
-    Java: ['Project 1', 'Project 2', 'Project 3'],
+    Java: ['Text-Based Game', 'Discord Bot (Javacord)', 'Project 3'],
     Python: ['Project 1', 'Project 2', 'Project 3'],
     JavaScript: ['Project 1', 'Project 2', 'Project 3'],
   };
