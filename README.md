@@ -30,6 +30,8 @@ Creating a website to display my information and things I've worked on/experienc
     -Finalize Design[]
 
     -Make a sort of resume style?[]
+        -Implement description for work experience to further elaborate/relate to current goal[]
+        -Implement something in skills to show how long I've been working with whatever is listed[]
 
 -Create contact me page [X]
 

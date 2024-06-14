@@ -4,8 +4,10 @@ import { Typography } from '@mui/material';
 const Skills = ({ skills }) => (
     <div>
         {skills.map((skill, index) => (
-            <Typography key={index}>
-                {skill}
+            <Typography key={index} sx={{ fontSize: 12 }}>
+                <ul>
+                    <li>{skill}</li>
+                </ul>
             </Typography>
         ))}
     </div>

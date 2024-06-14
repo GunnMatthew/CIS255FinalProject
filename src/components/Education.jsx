@@ -4,7 +4,7 @@ import { Typography } from '@mui/material';
 const Education = ({ education }) => (
     <div>
         {education.map((edu, index) => (
-            <Typography key={index}>
+            <Typography key={index} sx={{ fontSize: 12 }}>
                 {edu.degree} at {edu.institution} ({edu.duration})
             </Typography>
         ))}

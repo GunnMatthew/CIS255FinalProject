@@ -4,7 +4,7 @@ import { Typography } from '@mui/material';
 const WorkExperience = ({ workExperience }) => (
     <div>
         {workExperience.map((work, index) => (
-            <Typography key={index}>
+            <Typography key={index} sx={{ fontSize: 12 }}>
                 {work.role} at {work.company} ({work.duration})
             </Typography>
         ))}
