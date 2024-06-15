@@ -14,7 +14,7 @@ const ProjectCard = ({ language, projects }) => {
     navigate(`/Projects/${language.toLowerCase()}`);
   }
 
-  // JQuery for card color change on hover.
+  // JQuery for card color change on hover.  Replace later, JQuery + React *can* cause issues!
   useEffect(() => {
     $('.projectCard').hover( 
       function() {
