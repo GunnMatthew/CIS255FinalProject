@@ -16,6 +16,7 @@ const StyledPaper = styled(Paper)({
     overflow: 'hidden',
 });
 
+// What to display on this page.
 const AboutMe = ({aboutMe, education, workExperience, skills }) => {
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
@@ -54,7 +55,7 @@ const AboutMe = ({aboutMe, education, workExperience, skills }) => {
     );
 };
 
-// aboutMe is required to be a string
+// Prop validation
 AboutMe.propTypes = {
     aboutMe: PropTypes.string,
     education: PropTypes.arrayOf(PropTypes.shape({
@@ -70,7 +71,7 @@ AboutMe.propTypes = {
     skills: PropTypes.arrayOf(PropTypes.string),
 };
 
-// Set default description because I'm only using my info anyways.
+// Set defaults, this doesn't need to be "dynamic", but allow for modularity.
 AboutMe.defaultProps = {
     aboutMe: "I am currently a student studying Software Development at Olympic College in Bremerton, WA.  As of now, I have experience in several different languages and strive to better msyelf and continue to learn more.  My current intended graduation date is in the Winter quarter of 2024 after which I intend to transfer to Western Washington University to complete my Bachelor's Degree in Computer Systems.  If you have interest in viewing my projects, feel free to browse my Github repositories, or send me an email!",
     education: [

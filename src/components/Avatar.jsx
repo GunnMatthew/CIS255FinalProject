@@ -15,7 +15,7 @@ const ImageAvatars = ({alt, src}) => {
     )
 }
 
-// requires alt and src to be strings.
+// Prop Validation
 ImageAvatars.propTypes = {
     alt: PropTypes.string,
     src: PropTypes.string,

@@ -27,17 +27,11 @@ Creating a website to display my information and things I've worked on/experienc
 
 -Create About Me [X]
 
-    -Finalize Design[]
-
-    -Make a sort of resume style?[]
-        -Implement description for work experience to further elaborate/relate to current goal[]
-        -Implement something in skills to show how long I've been working with whatever is listed[]
+    -Finalize Design[X]
 
 -Create contact me page [X]
 
-    -Make the form submission actually email me (Not completing for Final Project turn in, will be done when I start putting this "out there") []
+    -Make the form submission actually email me (Not completing for Final Project turn in, will be done when I start putting this "out there") [] (Do this post submission, doesn't need to be set up just yet.)
 
--What information do I want to display on About Me that doesn't contradict Projects?
-
-    -Education?  Experience?  That kinda stuff, probably.
+-Ready for Final Project Turn-in! [X]
 

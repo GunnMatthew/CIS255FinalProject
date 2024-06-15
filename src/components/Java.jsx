@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import ProjectCard from './ProjectCard';
 import JavaTextGame from '../assets/images/TextBasedGameJava.png';
 
+// Define projects done in Java.
 const projects = [
   {
       title: 'Text-Based Game [WIP]',

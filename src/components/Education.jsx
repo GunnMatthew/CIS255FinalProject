@@ -15,6 +15,7 @@ const Education = ({ education }) => (
     </div>
 );
 
+// Prop validation
 Education.propTypes = {
     education: PropTypes.arrayOf(PropTypes.shape({
         degree: PropTypes.string,

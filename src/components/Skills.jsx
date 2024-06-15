@@ -14,6 +14,7 @@ const Skills = ({ skills }) => (
     </Typography>
 );
 
+// Prop validation
 Skills.propTypes = {
     skills: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

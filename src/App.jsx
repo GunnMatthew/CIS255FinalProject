@@ -8,6 +8,8 @@ import pythonAvatar from './assets/images/python.png';
 
 function App() {
   const location = useLocation();
+  
+  // Variables to determine page location.
   const isHomePage = location.pathname === '/';
   const isJavaPage = location.pathname === '/Projects/java';
   const isJavaScriptPage = location.pathname === '/Projects/javascript';

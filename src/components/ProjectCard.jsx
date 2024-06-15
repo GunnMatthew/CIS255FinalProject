@@ -5,7 +5,7 @@ import { styled } from '@mui/system';
 import ProjectDefaultImage from '../assets/images/ProjectDefault.png';
 
 
-
+// Styling for the card as a whole.
 const StyledCard = styled(Card)({
     backgroundColor: '#333',
     border: '2px solid black',
@@ -17,6 +17,7 @@ const StyledCard = styled(Card)({
     boxShadow: '2px 4px 4px black',
 });
 
+// Styling for the bottom text.
 const StyledLink = styled(Typography)({
     color: '#1a73e8',
     textDecoration: 'none',
@@ -57,12 +58,14 @@ const ProjectCard = ({ title, imageSrc, githubLink }) => {
     );
 };
 
+// Prop validation
 ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     imageSrc: PropTypes.string.isRequired,
     githubLink: PropTypes.string.isRequired,
   };
 
+// Sets defaults usable for project cards.
 ProjectCard.defaultProps = {
     title: "Check back later for more!",
     imageSrc: ProjectDefaultImage,

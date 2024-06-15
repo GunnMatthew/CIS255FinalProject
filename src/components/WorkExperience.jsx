@@ -22,6 +22,7 @@ const WorkExperience = ({ workExperience }) => (
     </Box>
 );
 
+// Prop validation
 WorkExperience.propTypes = {
     workExperience: PropTypes.arrayOf(PropTypes.shape({
         company: PropTypes.string,

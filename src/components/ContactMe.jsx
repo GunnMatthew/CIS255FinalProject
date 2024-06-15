@@ -9,6 +9,7 @@ const ContactMe = () => {
         message: '',
     });
 
+    // Handles changes to form data.  Prevents overwritting fields.
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -17,6 +18,7 @@ const ContactMe = () => {
         });
     };
 
+    // Handles what happens when clicking submit.  Currently, only prints information to console.  Add EmailJS later to make this function.
     const handleFormSubmit = (e) => {
         e.preventDefault();
         // Make this functional at some point.

@@ -14,6 +14,7 @@ const ProjectCard = ({ language, projects }) => {
     navigate(`/Projects/${language.toLowerCase()}`);
   }
 
+  // JQuery for card color change on hover.
   useEffect(() => {
     $('.projectCard').hover( 
       function() {
@@ -48,16 +49,18 @@ const ProjectCard = ({ language, projects }) => {
   );
 };
 
+// Prop validation
 ProjectCard.propTypes = {
   language: PropTypes.string.isRequired,
   projects: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
+// Declare languages and their respective projects.
 const Projects = () => {
   const projectData = {
-    Java: ['Text-Based Game', 'Discord Bot (Javacord)', 'Project 3'],
-    Python: ['Project 1', 'Project 2', 'Project 3'],
-    JavaScript: ['Project 1', 'Project 2', 'Project 3'],
+    Java: ['Text-Based Game', 'Discord Bot (Javacord)', 'Coming Soon!'],
+    Python: ['Coming Soon!', 'Coming Soon!', 'Coming Soon!'],
+    JavaScript: ['Coming Soon!', 'Coming Soon!', 'Coming Soon!'],
   };
 
   return (

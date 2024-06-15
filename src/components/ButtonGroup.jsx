@@ -20,6 +20,7 @@ export default function BasicButtonGroup(props) {
         navigate('/ContactMe')
     }
 
+    // Prop validation
     BasicButtonGroup.propTypes = {
       buttonOne: PropTypes.string.isRequired,
       buttonTwo: PropTypes.string.isRequired,
@@ -27,6 +28,7 @@ export default function BasicButtonGroup(props) {
       buttonFour: PropTypes.string.isRequired,
     };
 
+    // Specifics for button style/handling button clicks.
   return (
     <ButtonGroup variant="contained">
       <Button sx={{backgroundColor: "darkgray", color: "black"}} onClick={handleAboutMeClick}>{props.buttonOne}</Button>

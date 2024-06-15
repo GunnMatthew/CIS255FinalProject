@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import ProjectCard from './ProjectCard';
 
+// Define projects made in JS.
 const projects = [
   {
   },
