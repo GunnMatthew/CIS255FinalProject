@@ -18,7 +18,7 @@ const StyledPaper = styled(Paper)({
 
 const AboutMe = ({aboutMe, education, workExperience, skills }) => {
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center'}}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
             <StyledPaper>
                 <Typography sx={{ fontWeight: 'bold', fontSize: 16 }}>
                     Matthew E. Gunn
@@ -37,10 +37,13 @@ const AboutMe = ({aboutMe, education, workExperience, skills }) => {
                 </Typography>
                 <WorkExperience workExperience={workExperience}/>
                 <Typography sx={{ fontWeight: 'bold', textAlign: 'left', mb: 1}}>
-                    Work Experience
+                    Skills
                 </Typography>
                 <Skills skills={skills}/>
-                <Typography variant="body1">
+                <br/>
+                <hr/>
+                <br/>
+                <Typography sx={{ fontSize: 12, textAlign: 'left', textIndent: '20px' }}>
                     {aboutMe}
                 </Typography>
             </StyledPaper>
@@ -66,13 +69,14 @@ AboutMe.propTypes = {
 
 // Set default description because I'm only using my info anyways.
 AboutMe.defaultProps = {
-    aboutMe: "I am currently a student studying Software Development at Olympic College in Bremerton, WA.  I have experience in Java, JavaScript, and Python.  Feel free to browse my repositories on Github, or view my other projects by clicking the respective button.",
+    aboutMe: "I am currently a student studying Software Development at Olympic College in Bremerton, WA.  As of now, I have experience in several different languages and strive to better msyelf and continue to learn more.  My current intended graduation date is in the Winter quarter of 2024 after which I intend to transfer to Western Washington University to complete my Bachelor's Degree in Computer Systems.",
     education: [
         {institution: "Manvel High School", degree: "High School Diploma", duration: '2009-2011'},
         {institution: "Olympic College", degree: "Information Technology: Software Development - Associate in Applied Science - Transfer (AAS-T)", duration: 'May 2023-Present'},
     ],
     workExperience: [
-        {company: "ATS Automation", role: "Automation Technician", duration: "May 2020 - May 2023"},
+        {company: "ATS Automation", role: "Automation Technician", duration: "May 2020 - May 2023", description: "Programming, installation, and troubleshooting of PLCs.  Performed project design and project management for various projects including but not limited to St. Michael's OR upgrades, Seattle VA Hospital expansion, and Richard Gordon Elementary School upgrades."},
+        {company: "US Navy", role: "Electrician's Mate (Nuclear)", duration: "May 2014 - May 2020", description: "Performed maintenance and troubleshooting on various electrical components onboard a nuclear submarine."}
     ],
     skills: ['Java', 'JavaScript', 'Python', 'React', 'SQL', 'HTML/CSS'],
 };

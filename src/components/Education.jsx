@@ -5,7 +5,11 @@ const Education = ({ education }) => (
     <div>
         {education.map((edu, index) => (
             <Typography key={index} sx={{ fontSize: 12 }}>
-                {edu.degree} at {edu.institution} ({edu.duration})
+                <ul>
+                    <li style={{ textAlign: 'left' }}>
+                        {edu.degree} at {edu.institution} ({edu.duration})
+                    </li>
+                </ul>
             </Typography>
         ))}
     </div>

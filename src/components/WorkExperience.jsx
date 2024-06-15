@@ -1,14 +1,25 @@
 import PropTypes from 'prop-types';
-import { Typography } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 
 const WorkExperience = ({ workExperience }) => (
-    <div>
+    <Box component="ul" sx={{ textAlign: 'left'}}>
         {workExperience.map((work, index) => (
-            <Typography key={index} sx={{ fontSize: 12 }}>
-                {work.role} at {work.company} ({work.duration})
-            </Typography>
+            <li key={index} style={{ fontSize: 12}}>
+                <Typography sx={{ fontSize: 12 }}>
+                    {work.role} at {work.company} ({work.duration})
+                </Typography>
+                {work.description && (
+                    <Box component="ul">
+                        <li>
+                            <Typography sx={{ fontSize: 12 }}>
+                                {work.description}
+                            </Typography>
+                        </li>
+                    </Box>
+                )}
+            </li>
         ))}
-    </div>
+    </Box>
 );
 
 WorkExperience.propTypes = {
@@ -16,6 +27,7 @@ WorkExperience.propTypes = {
         company: PropTypes.string,
         role: PropTypes.string,
         duration: PropTypes.string,
+        description: PropTypes.string,
     })).isRequired,
 };
 
