@@ -23,7 +23,7 @@ const AboutMe = ({aboutMe, education, workExperience, skills }) => {
                 <Typography sx={{ fontWeight: 'bold', fontSize: 16 }}>
                     Matthew E. Gunn
                 </Typography>
-                <Typography component="div" sx={{ fontWeight: 'bold', fontSize: 14, mb: 1 }}>
+                <Typography component="div" sx={{ fontWeight: 'bold', fontSize: 14, mb: 4 }}>
                     Bremerton, Washington 98312
                     <br/>
                     gunnmatthewe@gmail.com
@@ -32,16 +32,19 @@ const AboutMe = ({aboutMe, education, workExperience, skills }) => {
                     Educational Experience
                 </Typography>
                 <Education education={education}/>
-                <Typography sx={{ fontWeight: 'bold', textAlign: 'left', mb: 1}}>
+                <br/>
+                <Typography sx={{ fontWeight: 'bold', textAlign: 'left', mb: 1 }}>
                     Work Experience
                 </Typography>
                 <WorkExperience workExperience={workExperience}/>
+                <br/>
                 <Typography sx={{ fontWeight: 'bold', textAlign: 'left', mb: 1}}>
                     Skills
                 </Typography>
                 <Skills skills={skills}/>
                 <br/>
                 <hr/>
+                <br/>
                 <br/>
                 <Typography sx={{ fontSize: 12, textAlign: 'left', textIndent: '20px' }}>
                     {aboutMe}
@@ -69,7 +72,7 @@ AboutMe.propTypes = {
 
 // Set default description because I'm only using my info anyways.
 AboutMe.defaultProps = {
-    aboutMe: "I am currently a student studying Software Development at Olympic College in Bremerton, WA.  As of now, I have experience in several different languages and strive to better msyelf and continue to learn more.  My current intended graduation date is in the Winter quarter of 2024 after which I intend to transfer to Western Washington University to complete my Bachelor's Degree in Computer Systems.",
+    aboutMe: "I am currently a student studying Software Development at Olympic College in Bremerton, WA.  As of now, I have experience in several different languages and strive to better msyelf and continue to learn more.  My current intended graduation date is in the Winter quarter of 2024 after which I intend to transfer to Western Washington University to complete my Bachelor's Degree in Computer Systems.  If you have interest in viewing my projects, feel free to browse my Github repositories, or send me an email!",
     education: [
         {institution: "Manvel High School", degree: "High School Diploma", duration: '2009-2011'},
         {institution: "Olympic College", degree: "Information Technology: Software Development - Associate in Applied Science - Transfer (AAS-T)", duration: 'May 2023-Present'},
